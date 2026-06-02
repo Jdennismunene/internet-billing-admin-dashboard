@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Sidebar from './components/Sidebar'
 import { Routes, Route } from 'react-router-dom'
 import Home from './components/Home'

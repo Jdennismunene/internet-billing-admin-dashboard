@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaArrowRight, FaCalendar, FaChartLine, FaClock, FaExclamationCircle, FaGlobe, FaSignal, FaSimCard, FaUsers, FaWifi } from 'react-icons/fa'
 import { FaDownload, FaUpload, } from 'react-icons/fa6'
 import { FiTrendingDown, FiTrendingUp } from 'react-icons/fi'
@@ -93,6 +92,9 @@ const Home = () => {
           ))}
         </div>
       </div>
+
+      {/*-- section 2--*/}
+      <div className='flex flex-col xl:flex-row gap-2'>
 
       {/*--Key metrics--*/}
       <div className='mt-4 w-full xl:w-[75%] bg-white shadow-lg rounded-md p-4'>
@@ -216,12 +218,18 @@ const Home = () => {
     </div>
   </div>
 
+    {/*--system info--*/}
+    <div className='mt-4 w-full xl:w-[25%] bg-white shadow-lg rounded-md p-4'>
+      <h2 className='text-lg font-semibold text-orange-400'>System Info</h2>
+    </div>
+  </div>
+
       {/*--System logs--*/}
       <div className='w-[75%] mt-6'>
         <div className='flex flex-row items-center justify-between my-2 items-center'>
           <h2 className='text-orange-400 text-lg'>System Logs</h2>
           <div className='flex flex-row items-center gap-2'>
-            <span className='text-sm text-gray-400'>see more</span>
+            <a href='' className='text-sm text-gray-400 cursor-pointer hover:text-orange-400'>see more</a>
             <button className='cursor-pointer '>
               <FaArrowRight size={12} />
             </button>
